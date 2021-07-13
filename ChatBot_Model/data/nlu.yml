@@ -1,0 +1,166 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - chào em
+    - hello em
+    - hi em
+    - em ơi, cho anh hỏi
+    - bot ơi
+    - cho mình hỏi chút
+    - xin chào
+    - chào bot
+    - xin chào bot 
+    - mình chào bot
+    - bạn bot ơi
+    - hey you
+    - alo alo
+    - ê bot
+    - chào bạn nha
+    - hi 
+    - ê
+
+- intent: goodbye
+  examples: |
+    - tạm biệt bot
+    - thôi nha
+    - good bye
+    - cee you later
+    - good night
+    - gặp sau
+    - goodbye
+    - gặp sau nha
+    - see you around
+    - bye bye
+    - see you later
+    - tạm biệt em
+    - tạm biệt bot nhá
+
+- intent: ask_schedule
+  examples: |
+    - ngày mai có môn gì đấy
+    - ngày mai mình có những môn nào?
+    - ngày mai học gì ấy nhỉ
+    - cho xem thời khóa biểu với 
+    - sắp tới học cái gì
+    - thời khóa biểu
+    - lịch học
+    - môn gì ngày sắp tới
+    - thời khóa biêu có gì mới nào
+    - mai học gì vậy?
+    - ngày 12-3-2020 có lịch học là gì
+    - cho xem lịch học tháng sau
+    - thời khóa biểu năm sau
+    - thời khóa biểu kì này
+    - cho xem lịch học đi
+    - mã sinh viên là 
+    - mã số sinh viên là 
+    - masv là [1811505310241]{"entity":"masv"}
+    - mssv là [1811505310311]{"entity":"masv"}
+    - mssv [1911505310122]{"entity":"masv"}
+    - [1911505310111]{"entity":"masv"}
+    - thời khóa biểu ngày mai có gì
+    - thời khóa biểu hôm nay có gì
+    - cho xem thời khóa biểu ngày mai
+    - ngày mai có môn gì?
+    - môn học ngày mai
+    - thời khóa biểu ngày mai
+    - mai có những môn gì
+    - có những môn gì vào ngày mai
+    - xem giúp mình ngày mai có những môn gì
+
+- intent: register_course
+  examples: |
+    - thời gian đăng ký môn học
+    - đăng ký môn học khi nào
+    - lúc nào đăng ký môn học
+    - đăng ký môn học là ngày mấy
+    - cho hỏi đăng ký môn học lúc nào
+    - đăng ký môn học
+    - đăng ký môn học khi nào
+    - đăng ký môn học vào lúc nào
+    - thời gian để đăng ký môn học
+    - minh muốn đăng ký môn học
+    - thông tin đăng kí môn học
+ 
+
+- intent: ask_ability
+  examples: |
+    - bot có thể làm những gì
+    - bot có chức năng gì
+    - bạn có thể làm gì
+    - bạn có thể giúp gì cho mình
+    - bạn có biết xem lịch học không
+    - bot biết làm gì
+    - bot hỗ trợ mình như thế nào
+    - cho mình xem bạn làm được gì
+
+- intent: thanks
+  examples: |
+    - cảm ơn em nhá
+    - cảm ơn bạn nhá
+    - thanks bot nha
+    - good job em
+    - cảm ơn nhiều
+    - thanks em nha
+    - cảm ơn bot nha
+    - thanks bot
+    - cảm ơn
+    - thank you 
+    - thanks
+
+- intent: praise
+  examples: |
+    - bot giỏi quá
+    - great
+    - bot làm tốt lắm
+    - wow giỏi thế
+    - bot thông minh ghê
+    - bạn thật tốt bụng
+    - bot thật thân thiện
+    - bạn tốt bụng ghê
+    - bot nhiệt tình quá 
+    - bot đẹp trai lắm
+    - bạn xinh lắm
+
+- intent: decry
+  examples: |
+    - quá tệ
+    - ngu ngốc
+    - chả biết gì cả
+    - thật bực mình
+    - ngu thật
+    - dở ghê
+    - có thế mà cũng không biết
+    - thật kém cỏi
+    - sai rồi, chán ghê
+    - chán thật
+
+- intent: bot_challenge
+  examples: |
+    - bạn là người máy?
+    - bạn có phải là người máy không
+    - bạn là một con bot
+    - bạn có phải là người
+    - tôi đang nói chuyện với một con bot
+    - tôi đang nói chuyện với một con người
+
+- intent: ask_notification
+  examples: |
+    - hôm nay có thông báo gì mới không?
+    - có thông báo gì mới không?
+    - xem giúp mình các thông báo mới
+    - hôm nay có gì mới không?
+    - khoa có gì mới không?
+
+- intent: ask_info 
+  examples: |
+    - thông tin của trường
+    - trang web của trường là gì
+    - thông tin liên hệ của trường
+    - website của trường là gì
+    - trang trường
+    - thông tin trang trường
+    - nói cho tôi về trang trường
+

@@ -1,0 +1,80 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+intents:
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- ask_schedule:
+    use_entities:
+        - masv
+- masv_entry:
+    use_entities: true
+- register_course:
+    use_entities: true
+- thanks:
+    use_entities: true
+- ask_ability:
+    use_entities: true
+- praise:
+    use_entities: true
+- decry:
+    use_entities: true
+- bot_challenge:
+    use_entities: true
+- ask_notification:
+    use_entities: true
+- ask_info:
+    use_entities: true
+
+entities: 
+    - masv
+    - pw
+slots: 
+    masv:
+        type: text
+
+    pw:
+        type: text
+        
+responses:
+  utter_greet:
+  - text: Chào bạn ^_^. Mình có thể giúp gì cho bạn?
+  utter_goodbye:
+  - text: Hẹn gặp lại bạn nha ^_^
+  utter_fallback:
+  - text: Hic, mình chưa hiểu ý bạn lắm. Bạn có thể nói lại được không???
+  utter_ability:
+  - text: Mình có thể giúp bạn xem thời khóa biểu, các thông báo gần đây, trang web của trường, xem thông tin đăng kí môn học!
+
+  utter_register_course:
+  - text: đăng ký môn học vào lúc 30/07/2021 đến 15/08/2021
+  utter_thanks:
+  - text: Mình luôn sẵn lòng giúp đỡ bất cứ khi nào bạn cầnnnnnnn ^^!
+  utter_praise:
+  - text: Bạn cứ quá lời :))
+  utter_sorry:
+  - text: Xin lôĩ bạn vì sự thiếu sót này :(((
+  utter_iamabot:
+  - text: Mình là một con bot, được xây dựng bởi UTE (PDT).
+  utter_notification:
+  - text: Đây là thông báo của bạn
+  utter_info:
+  - text: "Đây là trang chủ (https://ute.udn.vn/default.aspx)\n Đây là trang đào tạo (http://daotao.ute.udn.vn)"
+  
+
+actions:
+- utter_register_course
+- utter_greet
+- utter_goodbye
+- action_show_schedule
+- utter_fallback
+- utter_info
+- utter_notification
+forms: {}
+e2e_actions: []

@@ -1,0 +1,80 @@
+version: "2.0"
+
+stories:
+
+- story: test_story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: goodbye
+  - action: utter_goodbye
+- story: ask_schedule
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_schedule
+    entities:
+    - masv: "18115053010241"
+  - action: action_show_schedule
+  - intent: goodbye
+  - action: utter_goodbye
+- story: ask_register
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: register_course
+  - action: utter_register_course
+  - intent: goodbye
+  - action: utter_goodbye
+- story: ask_schedule2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_schedule
+    entities:
+    - masv: "18115053010241"
+  - action: action_show_schedule
+  - intent: thanks
+  - action: utter_thanks
+  - action: utter_goodbye
+
+- story: ask_notification
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_notification
+  - action: utter_notification
+  - intent: praise
+  - action: utter_praise
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: sad_story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: ask_ability
+  - action: utter_ability
+  - intent: deny
+  - action: utter_sorry
+- story: happy_great
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: bot_challenge
+    - action: utter_iamabot
+    - intent: ask_schedule
+    - action: action_show_schedule
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: get_info
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: ask_info
+    - action: utter_info
+    - intent: thanks
+    - action: utter_thanks
+    - intent: goodbye
+    - action: utter_goodbye
